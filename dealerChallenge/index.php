@@ -1,6 +1,6 @@
 <?php
+ini_set('display_errors', '1');
 require 'app/models/model.php';
-var_dump("index"); die;
 require 'app/controllers/controller.php';
 
 ?>
@@ -43,7 +43,7 @@ require 'app/controllers/controller.php';
                 <article>
                     <header>
                         <h1><?= isset($content['title']) ? $content['title'] : ''; ?></h1>
-                        <p><?= isset($content['content']) ? $content['content'] : ''; ?></p>
+                        <?= isset($content['content']) ? $content['content'] : ''; ?>
                     </header>
                     <footer>
                         <h3><?= isset($content['footer-title']) ? $content['footer-title'] : ''; ?></h3>

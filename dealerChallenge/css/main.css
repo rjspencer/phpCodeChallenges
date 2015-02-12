@@ -187,7 +187,6 @@ article, .main aside {
 }
 
 nav a {
-  height: 100%;
   background: #01579B;
   text-decoration: none;
 }
@@ -197,21 +196,17 @@ nav a:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.54), 2px 2px 8px rgba(0, 0, 0, 0.54);
 }
 
-
-
-
-
-
-
-
-
-
+iframe {
+  border: none;
+  width: 100%;
+  height: auto;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 540px) {
 
 /* ====================
     INTERMEDIATE: Menu
@@ -238,8 +233,8 @@ nav a:hover {
    ============ */
 
     .main article, .main aside {
-        margin: 20px auto;
-        width: 57%;
+        margin: 0 auto 20px auto;
+        width: 95%;
         float: none;
     }
 
@@ -277,24 +272,12 @@ nav a:hover {
 
     .main article {
         float: left;
-        width: 57%;
+        width: 62%;
     }
 
     .main aside {
         float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
+        width: 26%;
     }
 }
 
